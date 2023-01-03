@@ -1,0 +1,298 @@
+
+<!--&lt;!&ndash; saved from url=(0037)file:///D:/Downloads/udemy/fever.html &ndash;&gt;-->
+<!--<html><head>-->
+
+<!--  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head>-->
+<!--<body>-->
+<!--<py-script src="app.py">-->
+<!--      </py-script>-->
+
+
+<!--	<h3>USER SITE</h3>-->
+
+<!--<div>-->
+<!--  <form action="{{ url_for('predict')}}" method="post">-->
+
+<!--	<label for="AGE">Age</label>-->
+<!--	<input type="number" id="age" name="AGE" required="required">-->
+
+<!--	<label for="HEIGHT">Height</label>-->
+<!--  <input type="number" id="HEIGHT" name = "HEIGHT" required="required">-->
+
+<!--  <label for="weight">Weight</label>-->
+<!--  <input type="number" id="weight" name = "weight" required="required">-->
+
+<!--  <label for="GENDER">Gender(M-0/F-1)</label>-->
+<!--  <input type="number" id="GENDER" name = "GENDER" required="required"><br>-->
+
+<!--  <label for="TRAVELLED/NOT">Travelled/Not(0/1)</label>-->
+<!--  <input type="number" id="TRAVELLED/NOT" name = "TRAVELLED/NOT"  required="required"><br>-->
+
+<!--  <label for="TIERDNESS">Tiredness(0/1)</label>-->
+<!--  <input type="number" id="TIERDNESS" name = "TIERDNESS" required="required"><br>-->
+
+<!--  <label for="F_DAYS">Number of days of fever</label>-->
+<!--  <input type="number" id="F_DAYS" name ="F_DAYS" required="required"><br>-->
+
+<!--  <label for="F_TEMP">Body Temperature</label>-->
+<!--    <input type="number" id="F_TEMP" name ="F_TEMP" required="required"><br>-->
+
+<!--    <label for = "COLD_TYPE">COLD_TYPE</label>-->
+<!--  <input type="number" id="COLD_TYPE" name = "COLD_TYPE" required="required"><br>-->
+
+<!--  <label for="COLD_DAYS">Cold(0/1)</label>-->
+<!--  <input type="number" id="COLD_DAYS" name = "COLD_DAYS" required="required"><br>-->
+
+<!--  <label for="COUGH_TYPE">cough type(0/1) </label>-->
+<!--  <input type="number" id="COUGH_TYPE"  name =" COUGH_TYPE" required="required"><br>-->
+
+<!--  <label for="COUGH_DAYS">Cough(0/1)</label>-->
+<!--  <input type="number" id="COUGH_DAYS" name = "COUGH_DAYS" required="required"><br>-->
+
+<!--  <label for="DIARRHEA_TYPE">DIARRHEA(0/1)</label>-->
+<!--  <input type="number" id="DIARRHEA_TYPE" name = "DIARRHEA_TYPE" required="required"><br>-->
+
+<!--  <label for="VOMIT">VOMIT</label>-->
+<!--  <input type="number" id="VOMIT" name = "VOMIT" required="required"><br>-->
+
+<!--  <label for="BODYACHE">BODYACHE</label>-->
+<!--  <input type="number" id="BODYACHE" name = "BODYACHE" required="required"><br>-->
+<!--	<input type="submit" value="Submit">-->
+
+<!--</form>-->
+<!--  <br>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--  {{ prediction_text }}-->
+<!--   </div>-->
+
+
+
+<!--</body></html>-->
+
+
+
+
+
+
+
+
+
+
+
+<!--	&lt;!&ndash; <select id="w_class" name="w_class"> &ndash;&gt;-->
+<!--	&lt;!&ndash; <option value="0">Federal-gov</option>-->
+<!--	<option value="1">Local-gov</option>-->
+<!--	<option value="2">Never-worked</option>-->
+<!--	<option value="3">Private</option>-->
+<!--	<option value="4">Self-emp-inc</option>-->
+<!--	<option value="5">Self-emp-not-inc</option>-->
+<!--	<option value="6">State-gov</option>-->
+<!--	<option value="7">Without-pay</option> &ndash;&gt;-->
+<!--&lt;!&ndash; </select> &ndash;&gt;-->
+<!--	&lt;!&ndash; <br>-->
+<!--	<label for="edu">Education</label>-->
+<!--	<select id="edu" name="edu">-->
+<!--	<option value="0">10th</option>-->
+<!--	<option value="1">11th</option>-->
+<!--	<option value="2">12th</option>-->
+<!--	<option value="3">1st-4th</option>-->
+<!--	<option value="4">5th-6th</option>-->
+<!--	<option value="5">7th-8th</option>-->
+<!--	<option value="6">9th</option>-->
+<!--	<option value="7">Assoc-acdm</option>-->
+<!--	<option value="8">Assoc-voc</option>-->
+<!--	<option value="9">Bachelors</option>-->
+<!--	<option value="10">Doctorate</option>-->
+<!--	<option value="11">HS-grad</option>-->
+<!--	<option value="12">Masters</option>-->
+<!--	<option value="13">Preschool</option>-->
+<!--	<option value="14">Prof-school</option>-->
+<!--	<option value="15">16 - Some-college</option>-->
+<!--	</select>-->
+<!--	<br>-->
+<!--	<label for="martial_stat">Marital Status</label>-->
+<!--	<select id="martial_stat" name="martial_stat">-->
+<!--	<option value="0">divorced</option>-->
+<!--	<option value="1">married</option>-->
+<!--	<option value="2">not married</option>-->
+<!--	</select>-->
+<!--	<br>-->
+<!--	<label for="occup">Occupation</label>-->
+<!--	<select id="occup" name="occup">-->
+<!--	<option value="0">Adm-clerical</option>-->
+<!--	<option value="1">Armed-Forces</option>-->
+<!--	<option value="2">Craft-repair</option>-->
+<!--	<option value="3">Exec-managerial</option>-->
+<!--  <option value="4">Farming-fishing</option>-->
+<!--  	<option value="5">Handlers-cleaners</option>-->
+<!--  	<option value="6">Machine-op-inspect</option>-->
+<!--  	<option value="7">Other-service</option>-->
+<!--  	<option value="8">Priv-house-serv</option>-->
+<!--  	<option value="9">Prof-specialty</option>-->
+<!--  	<option value="10">Protective-serv</option>-->
+<!--  	<option value="11">Sales</option>-->
+<!--  	<option value="12">Tech-support</option>-->
+<!--  	<option value="13">Transport-moving</option>-->
+<!--  	</select>-->
+<!--  	<br>-->
+<!--  	<label for="relation">Relationship</label>-->
+<!--  	<select id="relation" name="relation">-->
+<!--  	<option value="0">Husband</option>-->
+<!--  	<option value="1">Not-in-family</option>-->
+<!--  	<option value="2">Other-relative</option>-->
+<!--  	<option value="3">Own-child</option>-->
+<!--  	<option value="4">Unmarried</option>-->
+<!--  	<option value="5">Wife</option>-->
+<!--  	</select>-->
+<!--  	<br>-->
+<!--  	<label for="race">Race</label>-->
+<!--  	<select id="race" name="race">-->
+<!--  	<option value="0">Amer Indian Eskimo</option>-->
+<!--  	<option value="1">Asian Pac Islander</option>-->
+<!--  	<option value="2">Black</option>-->
+<!--  	<option value="3">Other</option>-->
+<!--  	<option value="4">White</option>-->
+<!--  	</select>-->
+<!--  	<br>-->
+<!--  	<label for="gender">Gender</label>-->
+<!--  	<select id="gender" name="gender">-->
+<!--      <option value="0">Female</option>-->
+<!--      	<option value="1">Male</option>-->
+<!--      	</select>-->
+<!--      	<br>-->
+<!--      	<label for="c_gain">Capital Gain </label>-->
+<!--      	<input type="text" id="c_gain" name="c_gain">btw:[0-99999]-->
+<!--      	<br>-->
+<!--      	<label for="c_loss">Capital Loss </label>-->
+<!--      	<input type="text" id="c_loss" name="c_loss">btw:[0-4356]-->
+<!--      	<br>-->
+<!--      	<label for="hours_per_week">Hours per Week </label>-->
+<!--      	<input type="text" id="hours_per_week" name="hours_per_week">btw:[1-99]-->
+<!--      	<br>-->
+<!--      	<label for="native-country">Native Country</label>-->
+<!--      	<select id="native-country" name="native-country">-->
+<!--      	<option value="0">Cambodia</option>-->
+<!--      	<option value="1">Canada</option>-->
+<!--      	<option value="2">China</option>-->
+<!--      	<option value="3">Columbia</option>-->
+<!--      	<option value="4">Cuba</option>-->
+<!--      	<option value="5">Dominican Republic</option>-->
+<!--      	<option value="6">Ecuador</option>-->
+<!--      	<option value="7">El Salvadorr</option>-->
+<!--      	<option value="8">England</option>-->
+<!--      	<option value="9">France</option>-->
+<!--      	<option value="10">Germany</option>-->
+<!--      	<option value="11">Greece</option>-->
+<!--      	<option value="12">Guatemala</option>-->
+<!--      	<option value="13">Haiti</option>-->
+<!--      	<option value="14">Netherlands</option>-->
+<!--      	<option value="15">Honduras</option>-->
+<!--      	<option value="16">HongKong</option>-->
+<!--      	<option value="17">Hungary</option>-->
+<!--      	<option value="18">India</option>-->
+<!--      	<option value="19">Iran</option>-->
+<!--        <option value="20">Ireland</option>-->
+<!--        	<option value="21">Italy</option>-->
+<!--        	<option value="22">Jamaica</option>-->
+<!--        	<option value="23">Japan</option>-->
+<!--        	<option value="24">Laos</option>-->
+<!--        	<option value="25">Mexico</option>-->
+<!--        	<option value="26">Nicaragua</option>-->
+<!--        	<option value="27">Outlying-US(Guam-USVI-etc)</option>-->
+<!--        	<option value="28">Peru</option>-->
+<!--        	<option value="29">Philippines</option>-->
+<!--        	<option value="30">Poland</option>-->
+<!--        	<option value="11">Portugal</option>-->
+<!--        	<option value="32">Puerto-Rico</option>-->
+<!--        	<option value="33">Scotland</option>-->
+<!--        	<option value="34">South</option>-->
+<!--        	<option value="35">Taiwan</option>-->
+<!--        	<option value="36">Thailand</option>-->
+<!--        	<option value="37">Trinadad&Tobago</option>-->
+<!--        	<option value="38">United States</option>-->
+<!--        	<option value="39">Vietnam</option>-->
+<!--        	<option value="40">Yugoslavia</option>-->
+<!--        	</select>-->
+<!--        	<br> &ndash;&gt;-->
+
+
+
+
+
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <link rel="stylesheet" href="nbl.css">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<py-script src="app.py">
+      </py-script>
+
+
+	<h1 id="top">WELCOME TO USER SITE</h1>
+  <h3>Please enter your personal details</h3>
+
+<div>
+  <form action="{{ url_for('predict')}}" method="post">
+
+	<label for="AGE">AGE</label>
+	<input type="number" id="age" name="AGE" required="required">
+
+	<label for="HEIGHT">HEIGHT</label>
+  <input type="number" id="HEIGHT" name = "HEIGHT" required="required">
+
+  <label for="weight">WEIGHT</label>
+  <input type="number" id="weight" name = "weight" required="required">
+
+  <label for="GENDER">GENDER(M-0/F-1)</label>
+  <input type="number" id="GENDER" name = "GENDER" required="required"><br><br>
+
+  <label for="TRAVELLED/NOT">TRAVELLED/NOT(0/1)</label>
+  <input type="number" id="TRAVELLED/NOT" name = "TRAVELLED/NOT"  required="required"><br>
+  <br>
+
+  <label for="TIERDNESS">TIREDNESS(0/1)</label>
+  <input type="number" id="TIERDNESS" name = "TIERDNESS" required="required"><br><br>
+
+  <label for="F_DAYS">NUMBER OF DAYS OF FEVER</label>
+  <input type="number" id="F_DAYS" name ="F_DAYS" required="required"><br><br>
+
+  <label for="F_TEMP">BODY TEMPERATURE</label>
+    <input type="number" id="F_TEMP" name ="F_TEMP" required="required"><br><br>
+
+    <label for = "COLD_TYPE">COLD_TYPE</label>
+  <input type="number" id="COLD_TYPE" name = "COLD_TYPE" required="required"><br><br>
+
+  <label for="COLD_DAYS">COLD(0/1)</label>
+  <input type="number" id="COLD_DAYS" name = "COLD_DAYS" required="required"><br><br>
+
+  <label for="COUGH_TYPE">COUGH_TYPE(0/1) </label>
+  <input type="number" id="COUGH_TYPE"  name =" COUGH_TYPE" required="required"><br><br>
+
+  <label for="COUGH_DAYS">COUGH(0/1)</label>
+  <input type="number" id="COUGH_DAYS" name = "COUGH_DAYS" required="required"><br><br>
+
+  <label for="DIARRHEA_TYPE">DIARRHEA(0/1)</label>
+  <input type="number" id="DIARRHEA_TYPE" name = "DIARRHEA_TYPE" required="required"><br><br>
+
+  <label for="VOMIT">VOMIT</label>
+  <input type="number" id="VOMIT" name = "VOMIT" required="required"><br><br>
+
+  <label for="BODYACHE">BODY-ACHE</label>
+  <input type="number" id="BODYACHE" name = "BODYACHE" required="required"><br><br>
+	<input type="submit" value="Submit">
+  <!-- <button class="btn >btn success btn-lg" type="button" name="button">SUBMIT</button> -->
+
+</form>
+  <br>
+    <br>
+    <br>
+  {{ prediction_text }}
+   </div>
+
+
+
+</body></html>

@@ -1,0 +1,12 @@
+h1{
+  border:1px solid black;
+    color:red;
+  text-align: center;
+}
+body{
+  background-color: #a8e6ff;
+}
+input{
+  padding:12x 20px;
+  border:2px solid rgb(144,0,0)
+}
